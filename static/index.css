@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+body {
+            background: #fff;
+            color: #b71c1c;
+            font-family: 'Fredoka', Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(183,28,28,0.08);
+            padding: 32px 40px 40px 40px;
+        }
+        h1 img {
+            max-width: 180px;
+        }
+        h2 {
+            text-align: center;
+            color: #b71c1c;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        .form {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .form input, .form select, .form button {
+            font-family: 'Fredoka', Verdana, sans-serif;
+            padding: 10px 14px;
+            margin: 6px 4px;
+            border: 2px solid #b71c1c;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .form input[type="submit"], .form button {
+            background: #b71c1c;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form input[type="submit"]:hover, .form button:hover {
+            background: #d32f2f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            background: #fff;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: center;
+        }
+        th {
+            background: #b71c1c;
+            color: #fff;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background: #fff5f5;
+        }
+        tr:hover {
+            background: #ffeaea;
+        }
+        a {
+            color: #b71c1c;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #d32f2f;
+            text-decoration: underline;
+        }
+        .language_label {
+            font-size: 1.1rem;
+            margin-right: 8px;
+        }
+        .languagesubmit {
+            margin-left: 8px;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 16px 4px;
+            }
+            table, th, td {
+                font-size: 0.95rem;
+            }
+        }

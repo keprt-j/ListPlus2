@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>GroceryList</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="item">
+    <h1 style="text-align: center">Update Good</h1>
+
+    <div class="form">
+        <form action="/update/{{good.item_number}}" method="POST">
+            <input type="text" name="item" id="item" value="{{good.item}}">
+            <input type="text" name="quantity" id="quantity" value="{{good.quantity}}">
+            <input type="text" name="price" id="price" value="{{good.price}}">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>
+{% endblock %}
+
